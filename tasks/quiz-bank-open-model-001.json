@@ -1,0 +1,36 @@
+{
+  "id": "quiz-bank-open-model-001",
+  "title": "Canonical item model + JSON schema + bank/blueprint model",
+  "project": "quiz-bank-open",
+  "type": "design-spec",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["education", "oer", "assessment", "open-content"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "Open Educational Resources provide free learning content but rarely ship with trustworthy, auto-gradable question banks. Before authoring any bank, the project needs one canonical item model and JSON schema that all export formats (QTI 3.0, Moodle GIFT, Moodle XML, CSV/JSON) are projections of, plus a bank/blueprint model that fixes per-objective coverage. The deliverable is assessment content and light tooling, never a delivery runtime, and never items derived from non-open or No-Derivatives sources.",
+  "objective": "Define the canonical item model, its JSON schema, and the bank/blueprint model that every per-unit authoring task and every exporter will use.",
+  "acceptanceCriteria": [
+    "JSON schema defines all item fields: id, type, stem (Markdown+MathML), assets[]{ref,altText,license,attribution,sourceUrl}, choices[]{id,text,correct}, answerKey, scoring{method,tolerance,units,partialCredit,caseSensitive,acceptedAnswers[]}, rationale{overall,perChoice}, alignment{oerSourceId,learningObjectiveId,standardId,bloomLevel}, difficulty{estimate,basis}, readingLevel, provenance{sourceUrl,license,retrievedAt,attribution}, license, accessibility{altTextPresent,plainLanguage,noColorOnlyCue,mathFormat}, locale.",
+    "Bank/blueprint model defines items[] plus bankMetadata{unit,oerSource,blueprint,license,coverage{before,after}}, where the blueprint records each stated learning objective with target item count and difficulty spread (fixing the coverage denominator).",
+    "Supported item types enumerated (single-select MCQ, multiple-select MCQ, true/false, numeric, short-text, fill-in-the-blank/cloze, matching, ordering) with the scoring.method applicable to each.",
+    "Document states the deliverable is assessment content (not a runtime/LMS), item/bank output is CC-BY-4.0 (CC-BY-SA-4.0 when derived from a share-alike source), and code is MIT.",
+    "At least one filled worked-example item per type is committed as a fixture skeleton.",
+    "pnpm build && pnpm test && pnpm lint pass for any committed schema/tooling; commit is DCO signed-off."
+  ],
+  "resources": [
+    "C:\\code\\elyos\\planning\\projects\\quiz-bank-open\\PLAN.md",
+    "C:\\code\\elyos\\docs\\good-deed-definition.md",
+    "1EdTech QTI 3.0 specification",
+    "Moodle GIFT and Moodle XML import format docs",
+    "1EdTech CASE 1.1 specification",
+    "Bloom's revised taxonomy"
+  ],
+  "output": "A canonical item model definition plus its JSON schema and the bank/blueprint model, committed to the project repo and ready for reuse by per-unit authoring tasks and all format exporters.",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}
