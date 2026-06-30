@@ -1,0 +1,41 @@
+{
+  "project": "quiz-bank-open",
+  "lane": "donated",
+  "urgent": false,
+  "status": "open",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "id": "quiz-bank-open-gate-003",
+  "title": "OER license + provenance + PII triage checklist (blocking gate)",
+  "type": "design-spec",
+  "priority": "high",
+  "domain": [
+    "education",
+    "oer",
+    "assessment",
+    "licensing",
+    "provenance"
+  ],
+  "riskTier": "medium",
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "context": "The project's cardinal constraint is that items may only be derived from sources that explicitly permit derivative works. No item authoring may begin until a formal, committed license/provenance/PII triage gate exists. The gate must enumerate accepted licenses, state the objective PASS criterion (permitsDerivatives:true with a cited clause/URL), and specify PII screening. Failure to enforce this gate risks producing items from ND or unclear sources, which cannot be openly published and could constitute copyright infringement. This checklist is a blocking dependency for all per-unit authoring tasks.",
+  "objective": "Produce a committed, auditable license + provenance + PII triage checklist that must be passed (with the artifact committed) before any item is authored from a source.",
+  "acceptanceCriteria": [
+    "Enumerates accepted source licenses (Public Domain/CC0, CC-BY variants, CC-BY-SA variants, OGL) and excluded licenses (CC-BY-ND and CC-BY-NC-ND categorically excluded; CC-BY-NC deferred to policy-004; all-rights-reserved/unclear/unverifiable excluded).",
+    "States the objective PASS criterion: a source PASSes only if license.permitsDerivatives:true is recorded with a cited clause/URL; missing evidence, unparseable license, or ND terms = FLAG/EXCLUDE with no default-allow.",
+    "Specifies provenance recording: source URL, publisher, retrieval timestamp, source version/edition, license id + URL + committed license-text snapshot (SHA-256 + Wayback URL), and required attribution string.",
+    "Specifies PII screening: no real personal data may be embedded; any signal in a reused passage or dataset triggers rework or exclusion; scenarios must use synthetic, bias-screened contexts.",
+    "Defines the committed gate artifact format (PASS/FLAG/EXCLUDE per OER unit, recording which checks ran and their results).",
+    "Document is CC-BY-4.0 licensed; commit is DCO signed-off."
+  ],
+  "resources": [
+    "C:\\code\\elyos\\planning\\projects\\quiz-bank-open\\PLAN.md (Data, licensing & compliance section)",
+    "C:\\code\\elyos\\docs\\good-deed-definition.md",
+    "Creative Commons license summaries (CC-BY-4.0, CC-BY-SA-4.0, CC0, CC-BY-ND)",
+    "Open Government Licence (OGL) terms",
+    "SPDX license identifiers"
+  ],
+  "output": "A committed license + provenance + PII triage checklist defining PASS/FLAG/EXCLUDE criteria and the required gate artifact format, blocking all per-unit authoring until applied.",
+  "outputLicense": "CC-BY-4.0"
+}

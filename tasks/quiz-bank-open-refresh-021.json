@@ -1,0 +1,37 @@
+{
+  "project": "quiz-bank-open",
+  "lane": "donated",
+  "urgent": false,
+  "status": "open",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "id": "quiz-bank-open-refresh-021",
+  "title": "OER source-drift detection + refresh process",
+  "type": "maintenance",
+  "priority": "medium",
+  "domain": [
+    "education",
+    "oer",
+    "assessment",
+    "open-content"
+  ],
+  "riskTier": "low",
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "context": "OER sources are updated — chapters revised, figures changed, learning objectives reworded — and banks aligned to a specific source version can become silently stale or incorrect. A wrong key that was once correct due to an outdated source value is the cardinal risk. The refresh process must detect when a bank's source version has changed, re-validate affected items, and route stale items as maintenance tasks. This process is a prerequisite for M3's sustainability goal.",
+  "objective": "Document a source-drift detection and bank refresh process that detects OER source changes, re-validates affected items, and routes stale items as high-priority maintenance tasks.",
+  "acceptanceCriteria": [
+    "Process documented: how to detect when a bank's OER source version has changed (e.g. checking source URL, edition, changelog, or SHA-256 of source content).",
+    "Re-validation step defined: which items are affected by a source change, how they are flagged, and how they become maintenance tasks.",
+    "Answer-key defect reports routed as high-priority maintenance with a named owner.",
+    "Process commits a re-validation artifact per bank recording the source version at last review and any drift detected.",
+    "Document committed to the project repo; CC-BY-4.0 licensed; commit DCO signed-off."
+  ],
+  "resources": [
+    "quiz-bank-open-validator-006 (CI harness — re-run on refresh)",
+    "quiz-bank-open-gate-003 (provenance model — records source version)",
+    "C:\\code\\elyos\\planning\\projects\\quiz-bank-open\\PLAN.md (Sustainability & maintenance section)"
+  ],
+  "output": "A committed source-drift detection and bank refresh process document, with re-validation artifact format, integrated into the project's maintenance workflow.",
+  "outputLicense": "CC-BY-4.0"
+}

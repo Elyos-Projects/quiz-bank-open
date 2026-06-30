@@ -1,0 +1,39 @@
+{
+  "project": "quiz-bank-open",
+  "lane": "donated",
+  "urgent": false,
+  "status": "open",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "id": "quiz-bank-open-case-016",
+  "title": "CASE 1.1 standards-alignment for >= 1 open framework",
+  "type": "code",
+  "priority": "medium",
+  "domain": [
+    "education",
+    "oer",
+    "assessment",
+    "standards-alignment",
+    "tooling"
+  ],
+  "riskTier": "medium",
+  "deliverable": "pr",
+  "tokenEstimate": "medium",
+  "context": "CASE (Competencies and Academic Standards Exchange) 1.1 is the 1EdTech standard for machine-readable curriculum alignment. Adding standards alignment metadata to banks lets teachers filter and find items by standard — but only for openly licensed frameworks where redistribution of identifiers/derivatives is permitted. The framework license must be verified before embedding any standard text; restricted standard text may be referenced but not reproduced. Alignment is optional metadata; its absence must never block a bank.",
+  "objective": "Implement CASE 1.1 standards-alignment support in the canonical model's alignment.standardId field for at least one openly licensed framework (e.g. Common Core), with the framework license verified.",
+  "acceptanceCriteria": [
+    "The chosen framework's license is verified to permit redistribution of identifiers/derivatives (e.g. Common Core CC-BY-style with attribution); restricted frameworks are reference-only or omitted.",
+    "Implements CASE 1.1 alignment in alignment.standardId; alignment is optional metadata and its absence never blocks a bank from shipping.",
+    "No restricted standard text is reproduced where the license forbids it; restricted frameworks are referenced by identifier only.",
+    "Golden fixtures and CI tests cover both aligned and non-aligned items.",
+    "Code is MIT-licensed; pnpm build && pnpm test && pnpm lint pass; commits DCO signed-off."
+  ],
+  "resources": [
+    "quiz-bank-open-model-001 (canonical item model — alignment field)",
+    "1EdTech CASE 1.1 specification",
+    "Common Core State Standards license (CC-BY-style with attribution/branding conditions)",
+    "C:\\code\\elyos\\planning\\projects\\quiz-bank-open\\PLAN.md (Standards-alignment licensing section)"
+  ],
+  "output": "CASE 1.1 standards-alignment implementation in the canonical tooling (MIT-licensed) for at least one license-verified open framework, with CI tests and golden fixtures.",
+  "outputLicense": "MIT"
+}

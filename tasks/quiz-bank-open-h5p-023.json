@@ -1,0 +1,38 @@
+{
+  "project": "quiz-bank-open",
+  "lane": "donated",
+  "urgent": false,
+  "status": "open",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "id": "quiz-bank-open-h5p-023",
+  "title": "H5P question-type exporter",
+  "type": "code",
+  "priority": "low",
+  "domain": [
+    "education",
+    "oer",
+    "assessment",
+    "tooling",
+    "open-source"
+  ],
+  "riskTier": "low",
+  "deliverable": "pr",
+  "tokenEstimate": "medium",
+  "context": "H5P is an MIT-licensed open-source interactive content framework with a large install base on Moodle and WordPress. If H5P-based OER platforms (e.g. Pressbooks, Open edX with H5P plugin) enter scope as adoption targets, an H5P exporter would allow banks to be distributed in H5P's Multichoice/Question Set format. H5P's .h5p format is not QTI; it is platform-plugin-bound. This exporter is conditional on H5P-based platforms confirming adoption interest.",
+  "objective": "Implement an H5P exporter that converts canonical banks to H5P Question Set format for distribution via Moodle/WordPress/Pressbooks H5P installations.",
+  "acceptanceCriteria": [
+    "Projects a canonical bank to valid H5P Question Set format for supported item types.",
+    "Unsupported item types (beyond H5P Multichoice/True-False) explicitly flagged; no silent loss.",
+    "Golden fixtures and CI tests provided.",
+    "At least one real H5P import round-trip verified in a Moodle or WordPress H5P installation.",
+    "Code is MIT-licensed; pnpm build && pnpm test && pnpm lint pass; commits DCO signed-off."
+  ],
+  "resources": [
+    "quiz-bank-open-model-001 (canonical item model)",
+    "H5P documentation (Multichoice, Question Set content types)",
+    "H5P GitHub (https://github.com/h5p)"
+  ],
+  "output": "A CI-integrated H5P exporter (MIT-licensed Node package) with golden fixtures and verified real import round-trip.",
+  "outputLicense": "MIT"
+}

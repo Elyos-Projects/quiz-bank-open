@@ -1,0 +1,39 @@
+{
+  "project": "quiz-bank-open",
+  "lane": "donated",
+  "urgent": false,
+  "status": "open",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "id": "quiz-bank-open-a11ybias-005",
+  "title": "Accessibility + bias/sensitivity review checklist",
+  "type": "design-spec",
+  "priority": "high",
+  "domain": [
+    "education",
+    "oer",
+    "assessment",
+    "accessibility",
+    "bias"
+  ],
+  "riskTier": "low",
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "context": "Assessment content can exclude disabled learners (missing alt text, color-only cues, inaccessible math) and encode stereotypes or cultural biases that harm the learners OER is meant to serve. Both accessibility and bias/sensitivity review are mandatory, non-skippable gates before any bank ships. A formal checklist is required so that reviews are consistent, auditable, and attached as committed artifacts. This checklist also operationalizes the automated lint targets for the validator (quiz-bank-open-validator-006).",
+  "objective": "Produce a committed accessibility and bias/sensitivity review checklist covering the manual and automated checks required before any bank is considered done.",
+  "acceptanceCriteria": [
+    "Accessibility checklist covers: alt text present for all images and non-text assets; no color-only visual cues that convey answer information; math rendered in a screen-reader-compatible format (MathML with LaTeX source retained; aria/MathJax fallback path specified); plain language (no construct-irrelevant complexity); checklist maps to the accessibility fields in the canonical item model.",
+    "Bias/sensitivity checklist covers: no stereotyped or exclusionary assumptions (culture, region, gender, disability, socioeconomic); no trick wording or construct-irrelevant difficulty; synthetic, bias-screened names and contexts; checklist is usable by a non-SME reviewer.",
+    "Each checklist item specifies whether it is automated (CI lint) or human review, and whether a failure is blocking.",
+    "Checklist produces a committed PASS/ISSUES artifact per bank.",
+    "Document is CC-BY-4.0 licensed; commit is DCO signed-off."
+  ],
+  "resources": [
+    "C:\\code\\elyos\\planning\\projects\\quiz-bank-open\\PLAN.md (Quality, review & risk gates section)",
+    "WCAG 2.1 accessibility guidelines",
+    "Haladyna/Rodriguez item-writing guidelines (distractor and stem quality)",
+    "W3C MathML accessibility documentation"
+  ],
+  "output": "A committed accessibility and bias/sensitivity review checklist with PASS/ISSUES artifact format, ready for use by the validator, reviewers, and all per-bank authoring tasks.",
+  "outputLicense": "CC-BY-4.0"
+}

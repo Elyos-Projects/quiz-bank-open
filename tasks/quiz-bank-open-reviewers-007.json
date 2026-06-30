@@ -1,0 +1,38 @@
+{
+  "project": "quiz-bank-open",
+  "lane": "donated",
+  "urgent": false,
+  "status": "open",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "id": "quiz-bank-open-reviewers-007",
+  "title": "Name/secure mandatory reviewers (SME per subject, a11y, bias, license)",
+  "type": "research",
+  "priority": "high",
+  "domain": [
+    "education",
+    "oer",
+    "assessment",
+    "outreach",
+    "open-content"
+  ],
+  "riskTier": "low",
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "context": "Every question bank requires four mandatory, non-skippable human sign-offs before it can ship: a subject-matter reviewer (key + rationale correctness), a license reviewer (source permits derivatives), an accessibility reviewer (a11y conformance), and a bias/sensitivity reviewer. Additionally, a Steward must own partner relationships and record adoption evidence. Until these roles are named and confirmed for the pilot's subject area, the pilot bank (quiz-bank-open-pilot-009) cannot enter review and cannot ship. This is a blocking M0 prerequisite.",
+  "objective": "Identify, recruit, and confirm the minimum set of mandatory reviewers required for the pilot bank and document their roles, contact information, and sign-off process.",
+  "acceptanceCriteria": [
+    "At least one subject-matter reviewer (SME) confirmed for the pilot's subject area, with qualifications documented.",
+    "License reviewer, accessibility reviewer, and bias/sensitivity reviewer roles each filled by a named, confirmed individual.",
+    "Steward role identified (person responsible for partner relationships and recording adoption evidence).",
+    "Sign-off process documented: how reviewers are assigned to a bank, what they review, and how their approval is recorded as a committed artifact.",
+    "Document is committed to the project repo; CC-BY-4.0 licensed; commit is DCO signed-off."
+  ],
+  "resources": [
+    "C:\\code\\elyos\\planning\\projects\\quiz-bank-open\\PLAN.md (Governance, roles & stakeholders section)",
+    "quiz-bank-open-a11ybias-005 (checklist — defines what accessibility and bias reviewers review)",
+    "quiz-bank-open-gate-003 (defines what the license reviewer checks)"
+  ],
+  "output": "A committed document naming all mandatory reviewers for the pilot bank, their roles, qualifications, and the sign-off process.",
+  "outputLicense": "CC-BY-4.0"
+}

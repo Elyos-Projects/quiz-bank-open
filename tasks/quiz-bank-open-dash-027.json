@@ -1,0 +1,38 @@
+{
+  "project": "quiz-bank-open",
+  "lane": "donated",
+  "urgent": false,
+  "status": "open",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "id": "quiz-bank-open-dash-027",
+  "title": "Outcome dashboard (adoptions + reuse + key-defect rate)",
+  "type": "code",
+  "priority": "low",
+  "domain": [
+    "education",
+    "oer",
+    "assessment",
+    "tooling",
+    "open-source"
+  ],
+  "riskTier": "low",
+  "deliverable": "pr",
+  "tokenEstimate": "medium",
+  "context": "As the number of adopted banks grows, the project needs a machine-readable way to track its success metrics: adoptions, verifiable reuse events, auto-grade self-test pass rate, and key-defect rate. The dashboard reads the outcome ledger (outcomes/<bank-id>.json files) and generates a summary report. No learner data is collected; all metrics are derived from the Steward-recorded adoption artifacts.",
+  "objective": "Implement an outcome dashboard that reads the project's adoption evidence artifacts and generates a summary of the key success metrics.",
+  "acceptanceCriteria": [
+    "Reads outcomes/<bank-id>.json adoption artifacts and generates a summary report: number of banks adopted, verifiable reuse events, coverage percentages, and any key-defect reports.",
+    "Auto-grade self-test pass rate computed from CI records.",
+    "Output is a machine-readable JSON summary and a human-readable Markdown report.",
+    "No learner/student data is read or reported; all metrics are from Steward-recorded artifacts.",
+    "Code is MIT-licensed; pnpm build && pnpm test && pnpm lint pass; commits DCO signed-off."
+  ],
+  "resources": [
+    "quiz-bank-open-reuse-020 (outcome ledger format — reuse events)",
+    "quiz-bank-open-effort-019 (effort tracking format)",
+    "C:\\code\\elyos\\planning\\projects\\quiz-bank-open\\PLAN.md (Success metrics table)"
+  ],
+  "output": "A CI-integrated outcome dashboard CLI (MIT-licensed Node package) generating JSON + Markdown success-metric summaries from the project's adoption artifacts.",
+  "outputLicense": "MIT"
+}

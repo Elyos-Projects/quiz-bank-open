@@ -1,0 +1,38 @@
+{
+  "project": "quiz-bank-open",
+  "lane": "donated",
+  "urgent": false,
+  "status": "open",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "id": "quiz-bank-open-snapshot-012",
+  "title": "License-text snapshot capture in provenance flow",
+  "type": "code",
+  "priority": "medium",
+  "domain": [
+    "education",
+    "oer",
+    "assessment",
+    "tooling",
+    "open-source"
+  ],
+  "riskTier": "low",
+  "deliverable": "pr",
+  "tokenEstimate": "small",
+  "context": "The license gate (gate-003) requires a committed license-text snapshot (committed copy + SHA-256 + Wayback URL) per source and per reused asset. Currently this is a manual step; a small automation would make the provenance flow more reliable and faster. The tool must retrieve the license text from a URL, compute its SHA-256, submit it to the Wayback Machine for preservation, and commit the result as a structured provenance artifact.",
+  "objective": "Implement a CLI tool that retrieves a license text URL, computes its SHA-256 hash, captures a Wayback Machine save URL, and writes the snapshot artifact for inclusion in provenance records.",
+  "acceptanceCriteria": [
+    "Accepts a license URL as input; fetches the license text; computes SHA-256 of the fetched content.",
+    "Submits the URL to the Wayback Machine save API and records the returned permalink.",
+    "Writes a structured JSON snapshot artifact: { url, retrievedAt, sha256, waybackUrl, textSnippet } suitable for inclusion in provenance records.",
+    "Ships tests with mocked HTTP responses; CI green.",
+    "Code is MIT-licensed; pnpm build && pnpm test && pnpm lint pass; commits DCO signed-off."
+  ],
+  "resources": [
+    "quiz-bank-open-gate-003 (defines provenance artifact format)",
+    "Wayback Machine Save API documentation (https://archive.org/help/wayback_api.php)",
+    "C:\\code\\elyos\\planning\\projects\\quiz-bank-open\\PLAN.md (provenance model section)"
+  ],
+  "output": "A MIT-licensed CLI tool (Node package) for capturing license-text snapshots with SHA-256 + Wayback URL, integrated into the provenance flow.",
+  "outputLicense": "MIT"
+}

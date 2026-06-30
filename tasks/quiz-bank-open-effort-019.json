@@ -1,0 +1,36 @@
+{
+  "project": "quiz-bank-open",
+  "lane": "donated",
+  "urgent": false,
+  "status": "open",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "id": "quiz-bank-open-effort-019",
+  "title": "Throughput/effort tracking + per-bank baseline reduction",
+  "type": "research",
+  "priority": "low",
+  "domain": [
+    "education",
+    "oer",
+    "assessment",
+    "open-content"
+  ],
+  "riskTier": "low",
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "context": "M2's exit criteria include a measurable median per-bank effort reduction versus the M0/M1 recorded baseline. Without consistent effort tracking, this metric cannot be computed. This task defines and implements the effort logging format, collects the M0/M1 data points (pilot-009, bank-014, bank-015), and produces a baseline report from which M2 and M3 improvement will be measured.",
+  "objective": "Define a per-bank effort logging format, collect effort data from M0/M1 banks, and establish the baseline from which M2 throughput improvement will be measured.",
+  "acceptanceCriteria": [
+    "Effort logging format defined: per-bank fields for authoring time (hours), review time per reviewer type, iteration count, and blockers encountered.",
+    "Effort data collected for all completed M0/M1 banks (pilot-009, bank-014, bank-015) retrospectively.",
+    "Baseline report committed: median effort per bank and per phase (authoring, review, export, contribution) from M0/M1 data.",
+    "Format and baseline committed to the project repo; CC-BY-4.0 licensed; commit DCO signed-off."
+  ],
+  "resources": [
+    "quiz-bank-open-bank-014 (M1 bank — effort data source)",
+    "quiz-bank-open-bank-015 (M1 bank — effort data source)",
+    "quiz-bank-open-pilot-009 (pilot bank — effort data source)"
+  ],
+  "output": "A committed effort-logging format definition and M0/M1 effort baseline report for measuring M2 throughput improvement.",
+  "outputLicense": "CC-BY-4.0"
+}

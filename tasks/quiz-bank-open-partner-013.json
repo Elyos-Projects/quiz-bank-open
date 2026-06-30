@@ -1,0 +1,36 @@
+{
+  "project": "quiz-bank-open",
+  "lane": "donated",
+  "urgent": false,
+  "status": "open",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "id": "quiz-bank-open-partner-013",
+  "title": "Secure first confirmed adoption partner",
+  "type": "research",
+  "priority": "high",
+  "domain": [
+    "education",
+    "oer",
+    "assessment",
+    "outreach",
+    "open-content"
+  ],
+  "riskTier": "low",
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "context": "The project's success metric is adopted banks, not produced banks. All authoring tasks currently carry verifiedNeed:false because no named OER platform, school, or teacher has committed to reviewing and adopting contributed banks. Securing a first confirmed partner converts verifiedNeed to true for the relevant tasks, unlocks the requestor field, and validates the project's core hypothesis that this content is needed and will be used. This is the M1 milestone's most critical outcome gate.",
+  "objective": "Secure a first named OER platform or teacher who commits to reviewing and adopting contributed banks, and document the contribution mechanism.",
+  "acceptanceCriteria": [
+    "A named OER platform, school, or teacher has confirmed in writing that they will review and adopt contributed banks.",
+    "Contribution mechanism documented: how banks are submitted (platform import, repository PR, or release), who reviews them, and what constitutes confirmed adoption.",
+    "The tasks relevant to that partner updated to verifiedNeed: true with requestor set (in a follow-up PR to the relevant task JSON files).",
+    "Document committed with the partner's confirmation method and the contribution mechanism; CC-BY-4.0 licensed; commit DCO signed-off."
+  ],
+  "resources": [
+    "quiz-bank-open-outreach-008 (outreach threads opened — follow up here)",
+    "C:\\code\\elyos\\planning\\projects\\quiz-bank-open\\PLAN.md (Partner org and Verified need sections)"
+  ],
+  "output": "A committed document recording the first confirmed adoption partner, their confirmation, and the contribution/adoption mechanism.",
+  "outputLicense": "CC-BY-4.0"
+}

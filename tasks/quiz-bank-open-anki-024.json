@@ -1,0 +1,39 @@
+{
+  "project": "quiz-bank-open",
+  "lane": "donated",
+  "urgent": false,
+  "status": "open",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "id": "quiz-bank-open-anki-024",
+  "title": "Anki / spaced-repetition deck exporter",
+  "type": "code",
+  "priority": "low",
+  "domain": [
+    "education",
+    "oer",
+    "assessment",
+    "tooling",
+    "open-source"
+  ],
+  "riskTier": "low",
+  "deliverable": "pr",
+  "tokenEstimate": "small",
+  "context": "Anki is a widely used open-source spaced-repetition flashcard system. Single-select MCQ and true/false items project naturally to Anki Basic or Cloze card types; the stem + correct answer + rationale maps well to front/back format. This exporter overlaps with the open-flashcards project (which may share the canonical model's stem/choice/rationale structure); coordination is required to avoid duplication.",
+  "objective": "Implement an Anki .apkg deck exporter that projects canonical bank items (single-select MCQ, true/false, short-text) to Anki Basic or Cloze card format.",
+  "acceptanceCriteria": [
+    "Projects single-select MCQ, true/false, and short-text items to Anki Basic or Cloze cards; stem → front, answer + rationale → back.",
+    "Unsupported item types (matching, ordering, multi-select) gracefully excluded from Anki output with a log message.",
+    "Output is a valid .apkg file importable into Anki Desktop or AnkiWeb.",
+    "Golden fixtures and CI tests provided.",
+    "Coordination note with open-flashcards project documented to avoid duplication.",
+    "Code is MIT-licensed; pnpm build && pnpm test && pnpm lint pass; commits DCO signed-off."
+  ],
+  "resources": [
+    "quiz-bank-open-model-001 (canonical item model)",
+    "Anki .apkg format documentation and genanki Python library (or equivalent Node library)",
+    "open-flashcards project (coordination check)"
+  ],
+  "output": "A CI-integrated Anki .apkg exporter (MIT-licensed Node package) with golden fixtures and verified import round-trip.",
+  "outputLicense": "MIT"
+}

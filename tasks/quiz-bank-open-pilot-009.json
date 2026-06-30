@@ -1,0 +1,46 @@
+{
+  "project": "quiz-bank-open",
+  "lane": "donated",
+  "urgent": false,
+  "status": "open",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "id": "quiz-bank-open-pilot-009",
+  "title": "Pilot question bank end-to-end for one OER unit",
+  "type": "writing",
+  "priority": "high",
+  "domain": [
+    "education",
+    "oer",
+    "assessment",
+    "open-content",
+    "question-bank"
+  ],
+  "riskTier": "low",
+  "deliverable": "document",
+  "tokenEstimate": "medium",
+  "context": "The M0 milestone culminates in one pilot bank that proves the entire authoring pipeline end-to-end: source gating → blueprint → item authoring in the canonical model → CI machine gate → human sign-offs → contribution to the beneficiary. The pilot OER unit must be selected from the outreach-008 shortlist on a realistic adoption path (informal channel or self-serve fallback), using a clearly permissive license and a non-regulated subject. All M0 foundation tasks must be complete before authoring begins. The bank is the first proof that the project's pipeline produces actually-adopted, key-correct, accessible, unbiased open assessment content.",
+  "objective": "Author and deliver the first complete question bank aligned to one OER unit, passing all M0 gates (license, machine, human sign-offs) and adopted by a beneficiary via an informal channel or self-serve fallback.",
+  "acceptanceCriteria": [
+    "Pilot OER unit chosen with a realistic adoption path first (informal channel or self-serve fallback such as a GitHub PR to the OER repo or a tagged repo release with QTI/Moodle exports) and a clearly permissive license + non-regulated subject.",
+    "Source passed gate-003 (permits derivatives; no PII) with the gate artifact committed.",
+    "Blueprint committed: each stated learning objective of the unit listed with target item count and difficulty spread.",
+    "Items authored in the canonical model (quiz-bank-open-model-001) with correct answer keys, rationales (overall + per-distractor), scoring rules, alignment tags, and accessibility metadata.",
+    "Coverage >= 90% of the unit's stated learning objectives as recorded in the blueprint.",
+    "CI machine gate green: schema valid + grader self-test 100% pass + all quality and accessibility lints pass (quiz-bank-open-validator-006).",
+    "Human sign-offs recorded as committed artifacts: SME (key + rationale correct), license reviewer, accessibility reviewer, bias/sensitivity reviewer.",
+    "Bank adopted via the informal channel or self-serve fallback with the Steward's adoption evidence artifact (outcomes/<bank-id>.json: channel, URL/permalink, timestamp, coverage before/after) committed — or submitted with the specific blocker surfaced."
+  ],
+  "resources": [
+    "quiz-bank-open-model-001 (canonical item model + JSON schema)",
+    "quiz-bank-open-grader-002 (scoring spec)",
+    "quiz-bank-open-gate-003 (license/PII gate checklist)",
+    "quiz-bank-open-policy-004 (NC/SA policy)",
+    "quiz-bank-open-a11ybias-005 (accessibility + bias checklist)",
+    "quiz-bank-open-validator-006 (CI validator + self-test harness)",
+    "quiz-bank-open-reviewers-007 (named reviewers)",
+    "quiz-bank-open-outreach-008 (pilot unit selection + adoption path)"
+  ],
+  "output": "A complete, schema-valid, machine-gate-green, human-signed-off question bank for one OER unit, with adoption evidence artifact committed, exported to canonical JSON/CSV.",
+  "outputLicense": "CC-BY-4.0"
+}
