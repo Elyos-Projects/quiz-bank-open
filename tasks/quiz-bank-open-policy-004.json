@@ -1,0 +1,39 @@
+{
+  "project": "quiz-bank-open",
+  "lane": "donated",
+  "urgent": false,
+  "status": "open",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "id": "quiz-bank-open-policy-004",
+  "title": "NC / share-alike / license-compatibility acceptance policy",
+  "type": "design-spec",
+  "priority": "high",
+  "domain": [
+    "education",
+    "oer",
+    "assessment",
+    "licensing",
+    "provenance"
+  ],
+  "riskTier": "medium",
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "context": "The license gate (gate-003) defers NonCommercial (NC) and share-alike (SA) edge cases to this explicit policy. CC-BY-SA sources propagate the share-alike obligation to derived banks (CC-BY-SA-4.0 output); NC sources are ambiguous for downstream commercial reuse (a teacher at a fee-charging school) and must be explicitly resolved rather than guessed at. Mixing SA and non-SA sources in one bank requires a compatibility ruling. This policy must be merged before any bank is authored from an NC or SA source, and must be referenced by the license gate checklist.",
+  "objective": "Establish a clear, committed acceptance policy for NonCommercial and share-alike OER sources, specifying when they may be used, what output license obligations they trigger, and how mixing is handled.",
+  "acceptanceCriteria": [
+    "States the default stance on NC sources: default is exclude/escalate for commercial-reuse ambiguity, with criteria for any exceptions and who may grant them.",
+    "States that CC-BY-SA sources are accepted with share-alike propagation: any bank derived from a CC-BY-SA source is licensed CC-BY-SA-4.0, recorded per bank.",
+    "Addresses mixing: specifies whether SA and non-SA sources may be mixed in one bank and, if so, the compatibility rules and resulting output license.",
+    "Policy is versioned, references the gate-003 checklist, and must be merged before any authoring from an NC or SA source.",
+    "Document is CC-BY-4.0 licensed; commit is DCO signed-off."
+  ],
+  "resources": [
+    "quiz-bank-open-gate-003 (license gate checklist — must be consistent with this policy)",
+    "C:\\code\\elyos\\planning\\projects\\quiz-bank-open\\PLAN.md (Data, licensing & compliance section)",
+    "Creative Commons compatibility chart and license texts",
+    "SPDX license identifiers"
+  ],
+  "output": "A committed NC/share-alike/license-compatibility acceptance policy merged before any authoring from NC or SA sources.",
+  "outputLicense": "CC-BY-4.0"
+}

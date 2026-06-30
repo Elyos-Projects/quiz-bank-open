@@ -1,0 +1,40 @@
+{
+  "project": "quiz-bank-open",
+  "lane": "donated",
+  "urgent": false,
+  "status": "open",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "id": "quiz-bank-open-i18n-025",
+  "title": "Localize a delivered bank (translation track)",
+  "type": "writing",
+  "priority": "low",
+  "domain": [
+    "education",
+    "oer",
+    "assessment",
+    "translation",
+    "open-content"
+  ],
+  "riskTier": "medium",
+  "deliverable": "translation",
+  "tokenEstimate": "medium",
+  "context": "A canonical item model with cleanly separated stem, choices, rationale, and locale fields is cheaper to translate than prose. Localizing a delivered bank hands it to a translation-track project (similar to the Elyos emergency-phrasebooks or braille-ready-texts pattern) and requires a language-specific SME reviewer who can verify that the translated answer keys are correct in the target language. The output license depends on the source bank's license (CC-BY-4.0 or CC-BY-SA-4.0). The target language and SME reviewer must be confirmed before this task begins.",
+  "objective": "Localize one delivered question bank into a target language, with translated stems, choices, rationales, and locale metadata, reviewed by a language-specific SME.",
+  "acceptanceCriteria": [
+    "A target language and language-specific SME reviewer confirmed before authoring begins.",
+    "Stems, choices, answer keys (in the target language where relevant), rationales, and locale field translated into the target language.",
+    "Translated answer keys verified correct in the target language by the language-specific SME.",
+    "Accessibility metadata (alt text) translated or confirmed language-neutral.",
+    "Locale field set correctly in all translated items.",
+    "Machine gate green (schema valid + grader self-test pass on translated items).",
+    "Human sign-offs recorded: language SME (key correctness in target language), bias reviewer (no new culturally exclusionary content introduced by translation)."
+  ],
+  "resources": [
+    "quiz-bank-open-model-001 (canonical item model — locale and i18n fields)",
+    "quiz-bank-open-pilot-009 or quiz-bank-open-bank-014 (source bank to translate)",
+    "quiz-bank-open-validator-006 (CI harness — run on translated items)"
+  ],
+  "output": "A translated question bank in canonical JSON with locale metadata, verified by a language-specific SME, schema-valid and grader-self-test-passing.",
+  "outputLicense": "CC-BY-4.0"
+}

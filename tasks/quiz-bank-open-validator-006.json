@@ -1,0 +1,40 @@
+{
+  "project": "quiz-bank-open",
+  "lane": "donated",
+  "urgent": false,
+  "status": "open",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "id": "quiz-bank-open-validator-006",
+  "title": "Item validator + auto-grade self-test harness (CI)",
+  "type": "code",
+  "priority": "high",
+  "domain": [
+    "education",
+    "oer",
+    "assessment",
+    "tooling",
+    "open-source"
+  ],
+  "riskTier": "low",
+  "deliverable": "pr",
+  "tokenEstimate": "medium",
+  "context": "The project's claim that banks are auto-gradable must be a tested property, not a claim. The validator must enforce schema validity, run the grader self-test (key→100%, every distractor→0, partial→defined value), and apply quality lints (distractor hygiene, answer-position balance, reading-level check, accessibility lint) in CI. Golden fixtures (synthetic items, never restricted source text) must back every check. This is the hardest engineering prerequisite for bank authoring: no bank can be certified done without this harness running green.",
+  "objective": "Implement the item validator and auto-grade self-test harness that runs in CI, validating schema correctness, grader behavior, item quality, and accessibility for every item in a bank.",
+  "acceptanceCriteria": [
+    "Validates every item against the JSON schema defined in quiz-bank-open-model-001.",
+    "Runs the grader self-test per the spec in quiz-bank-open-grader-002: published answer key scores 100%; every declared wrong answer (all distractors) scores 0; partial-credit items score the defined partial value for defined partial responses.",
+    "Quality lint checks: duplicate or implausible distractors flagged; answer-position balance checked; all/none-of-the-above hygiene enforced; reading-level check applied.",
+    "Accessibility lint checks: alt text present for all assets; no color-only cues; MathML/aria format for math items.",
+    "Ships golden fixtures (synthetic items only, never restricted source text): valid items that must pass all checks, and malformed/wrong-key items that must fail.",
+    "Code is MIT-licensed; pnpm build && pnpm test && pnpm lint pass; commits are DCO signed-off."
+  ],
+  "resources": [
+    "quiz-bank-open-model-001 (canonical item model + JSON schema)",
+    "quiz-bank-open-grader-002 (scoring spec + self-test contract)",
+    "quiz-bank-open-a11ybias-005 (accessibility checklist — automated lint targets)",
+    "C:\\code\\elyos\\planning\\projects\\quiz-bank-open\\PLAN.md"
+  ],
+  "output": "A CI-integrated item validator and auto-grade self-test harness (MIT-licensed Node package) with golden fixtures, running in CI and gating all bank authoring tasks.",
+  "outputLicense": "MIT"
+}

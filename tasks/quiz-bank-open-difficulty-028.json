@@ -1,0 +1,38 @@
+{
+  "project": "quiz-bank-open",
+  "lane": "donated",
+  "urgent": false,
+  "status": "open",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "id": "quiz-bank-open-difficulty-028",
+  "title": "Lightweight difficulty/discrimination calibration from voluntary aggregate response data",
+  "type": "research",
+  "priority": "low",
+  "domain": [
+    "education",
+    "oer",
+    "assessment",
+    "data",
+    "open-content"
+  ],
+  "riskTier": "medium",
+  "deliverable": "document",
+  "tokenEstimate": "medium",
+  "context": "The project disclaims high-stakes psychometric calibration (IRT/equating) but aggregate, de-identified voluntary response data — if an adoption partner agrees to share it — could provide lightweight difficulty and discrimination signals to improve item quality without any individual-level data. This research task investigates whether such calibration is feasible, defines the data requirements (aggregate/de-identified only, never high-stakes calibration claims, partner consent required), and proposes a methodology if viable.",
+  "objective": "Research whether lightweight difficulty and discrimination calibration is feasible from voluntary aggregate response data, define the minimum data requirements, and produce a methodology proposal if viable.",
+  "acceptanceCriteria": [
+    "Research reviews existing open calibration approaches (classical test theory, lightweight IRT proxies) applicable to small, voluntary aggregate datasets.",
+    "Data requirements documented: aggregate/de-identified only; individual response data never collected or stored; partner explicit consent required; no high-stakes calibration claims made.",
+    "If viable: a proposed methodology document including sample-size requirements, statistical approach, and how results would annotate item difficulty fields — framed as informational signals, not validated calibration.",
+    "If not viable: a clear rationale for why the project should not attempt calibration at its current scale.",
+    "Document is CC-BY-4.0 licensed; commit is DCO signed-off."
+  ],
+  "resources": [
+    "C:\\code\\elyos\\planning\\projects\\quiz-bank-open\\PLAN.md (Non-goals: no high-stakes calibration)",
+    "Classical test theory literature (item difficulty, item-total correlation)",
+    "quiz-bank-open-reuse-020 (partner relationships — data-sharing consent would come through partners)"
+  ],
+  "output": "A committed research document on lightweight calibration feasibility, data requirements, and a methodology proposal (or rationale for deferral), framed as informational signals only.",
+  "outputLicense": "CC-BY-4.0"
+}

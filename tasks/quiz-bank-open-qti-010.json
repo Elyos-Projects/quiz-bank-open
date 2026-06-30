@@ -1,0 +1,39 @@
+{
+  "project": "quiz-bank-open",
+  "lane": "donated",
+  "urgent": false,
+  "status": "open",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "id": "quiz-bank-open-qti-010",
+  "title": "QTI 3.0 exporter (canonical → QTI 3.0)",
+  "type": "code",
+  "priority": "high",
+  "domain": [
+    "education",
+    "oer",
+    "assessment",
+    "tooling",
+    "open-source"
+  ],
+  "riskTier": "low",
+  "deliverable": "pr",
+  "tokenEstimate": "medium",
+  "context": "QTI 3.0 is the headline interoperability format that allows banks to be imported into Canvas, TAO, and other LMS platforms without rekeying. The exporter must project the canonical bank (quiz-bank-open-model-001) to valid QTI 3.0 (assessmentItem + responseDeclaration + outcomeDeclaration), preserving scoring semantics where QTI supports them and explicitly flagging — never silently dropping — any scoring rule QTI cannot express. A real QTI 3.0 consumer round-trip (not just golden-file diff) is required to prove the export is actually importable.",
+  "objective": "Implement a QTI 3.0 exporter that converts a canonical bank to valid, importable QTI 3.0 XML, validated against the pinned spec, with golden fixtures and at least one real platform round-trip.",
+  "acceptanceCriteria": [
+    "Projects a canonical bank to valid QTI 3.0 (assessmentItem + responseDeclaration + outcomeDeclaration shape), validated against the pinned 1EdTech QTI 3.0 spec.",
+    "Preserves scoring semantics where QTI 3.0 supports them; any scoring rule the format cannot express is explicitly flagged in the output and in CI, never silently dropped.",
+    "Ships golden input→output fixtures diffed in CI; output format validated against QTI 3.0 schema.",
+    "At least one real QTI 3.0 consumer round-trip verified (e.g. TAO, official QTI 3.0 validator, or a QTI-consuming platform) confirming the exported file is actually importable.",
+    "Code is MIT-licensed; pnpm build && pnpm test && pnpm lint pass; commits DCO signed-off."
+  ],
+  "resources": [
+    "quiz-bank-open-model-001 (canonical item model — projection source)",
+    "quiz-bank-open-grader-002 (scoring spec — semantics to preserve or flag)",
+    "1EdTech QTI 3.0 specification (assessmentItem, responseDeclaration, outcomeDeclaration)",
+    "TAO open-source QTI platform or 1EdTech QTI validator (for real round-trip test)"
+  ],
+  "output": "A CI-integrated QTI 3.0 exporter (MIT-licensed Node package) with golden fixtures, spec-validated output, and verified real platform import round-trip.",
+  "outputLicense": "MIT"
+}

@@ -1,0 +1,42 @@
+{
+  "project": "quiz-bank-open",
+  "lane": "donated",
+  "urgent": false,
+  "status": "open",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "id": "quiz-bank-open-bank-015",
+  "title": "Question bank #3 end-to-end (intro science, low risk)",
+  "type": "writing",
+  "priority": "medium",
+  "domain": [
+    "education",
+    "oer",
+    "assessment",
+    "open-content",
+    "question-bank"
+  ],
+  "riskTier": "low",
+  "deliverable": "document",
+  "tokenEstimate": "medium",
+  "context": "The third bank targets an introductory science OER unit (e.g. intro biology or earth science) to demonstrate that the pipeline generalizes across subjects and item types beyond math. Science items may include assets (diagrams with alt text) and matching/ordering types. Authoring effort is logged alongside bank-014 to establish the M1 baseline for M2 reduction. The bank must be exported to QTI 3.0 and Moodle and adopted by a beneficiary.",
+  "objective": "Author and deliver a complete, adopted question bank aligned to an intro science OER unit, passing all gates and exported to QTI 3.0 and Moodle, with authoring effort logged.",
+  "acceptanceCriteria": [
+    "Source passed gate-003 (permits derivatives; no PII) with gate artifact committed.",
+    "Coverage >= 90% of the unit's stated learning objectives as recorded in the blueprint.",
+    "Items authored in canonical model with correct keys, rationales, scoring, alignment, and accessibility metadata; any image assets have alt text.",
+    "CI machine gate green: schema valid + grader self-test 100% + quality and accessibility lints pass.",
+    "Human sign-offs recorded: SME (key + rationale), license, accessibility, bias.",
+    "Bank exported to QTI 3.0 and Moodle (GIFT/XML) using the M1 exporters.",
+    "Bank adopted by a beneficiary with adoption evidence artifact committed.",
+    "Per-bank authoring + review effort logged in the outcome ledger."
+  ],
+  "resources": [
+    "quiz-bank-open-pilot-009 (end-to-end pattern)",
+    "quiz-bank-open-qti-010 (QTI 3.0 exporter)",
+    "quiz-bank-open-moodle-011 (Moodle exporter)",
+    "quiz-bank-open-validator-006 (CI harness)"
+  ],
+  "output": "A complete, adopted intro-science question bank in canonical JSON + QTI 3.0 + Moodle GIFT/XML exports, with gate artifact, sign-offs, and adoption evidence committed.",
+  "outputLicense": "CC-BY-4.0"
+}

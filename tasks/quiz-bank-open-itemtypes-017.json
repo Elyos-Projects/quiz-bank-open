@@ -1,0 +1,40 @@
+{
+  "project": "quiz-bank-open",
+  "lane": "donated",
+  "urgent": false,
+  "status": "open",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "id": "quiz-bank-open-itemtypes-017",
+  "title": "Author + self-test advanced item types (matching/ordering/cloze/multi-select)",
+  "type": "writing",
+  "priority": "medium",
+  "domain": [
+    "education",
+    "oer",
+    "assessment",
+    "open-content",
+    "question-bank"
+  ],
+  "riskTier": "low",
+  "deliverable": "document",
+  "tokenEstimate": "medium",
+  "context": "The M0 pilot bank may focus on single-select MCQ and true/false; advanced types (matching, ordering, cloze/fill-in-the-blank, multiple-select with partial credit) are specified in the grader but not yet authored in real bank items with confirmed self-test passage. This task authors example items of each advanced type in the canonical model, confirms they pass the grader self-test (including partial credit vectors), and ensures exporters correctly handle or flag them. These items also serve as golden fixtures for the validator.",
+  "objective": "Author at least one complete, schema-valid, self-test-passing example item for each advanced type (matching, ordering, cloze, multiple-select with partial credit) and commit them as validated fixtures.",
+  "acceptanceCriteria": [
+    "At least one complete, schema-valid item authored per advanced type: matching (pair-based), ordering (sequence), fill-in-the-blank/cloze (per-blank scoring), multiple-select MCQ (partial-credit scoring).",
+    "Each item passes the grader self-test: key→100%, all distractors/wrong orderings→0, partial-credit items→defined partial value.",
+    "Each item passes accessibility lint (alt text if assets, no color-only cues, MathML for math).",
+    "Exporters (qti-010, moodle-011) tested against these items; any unsupported type × format cells documented in the support matrix.",
+    "Items committed as golden fixtures in the validator test suite.",
+    "Human SME sign-off recorded for each item's key and rationale."
+  ],
+  "resources": [
+    "quiz-bank-open-grader-002 (scoring spec — partial-credit formula for each type)",
+    "quiz-bank-open-validator-006 (CI harness — these items become golden fixtures)",
+    "quiz-bank-open-qti-010 (QTI 3.0 exporter — test advanced types)",
+    "quiz-bank-open-moodle-011 (Moodle exporter — test advanced types)"
+  ],
+  "output": "Committed canonical-model items for each advanced type, self-test-passing, accessibility-clean, used as golden fixtures in CI and as examples for bank authors.",
+  "outputLicense": "CC-BY-4.0"
+}

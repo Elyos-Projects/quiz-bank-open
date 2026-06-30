@@ -1,0 +1,39 @@
+{
+  "project": "quiz-bank-open",
+  "lane": "donated",
+  "urgent": false,
+  "status": "open",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "id": "quiz-bank-open-expert-026",
+  "title": "Expert-reviewed bank for a regulated subject (health/safety facts)",
+  "type": "writing",
+  "priority": "low",
+  "domain": [
+    "education",
+    "oer",
+    "assessment",
+    "open-content",
+    "health-literacy"
+  ],
+  "riskTier": "high",
+  "deliverable": "document",
+  "tokenEstimate": "large",
+  "context": "Items whose subject matter is health, legal, safety, or financial fact — even when framed educationally — are escalated to riskTier:high and require a credentialed expert sign-off and an explicit 'educational, not advice' framing. This bank is intentionally held in the backlog until a credentialed expert reviewer is secured for the specific subject area and a realistic adoption path confirmed. Without both, this task must not be started. The output is framed as educational content, not professional advice.",
+  "objective": "Author an expert-reviewed question bank on a regulated subject (health or safety facts) with a credentialed expert sign-off, 'educational, not advice' framing, and all standard gates passed.",
+  "acceptanceCriteria": [
+    "A credentialed expert reviewer secured and named for the specific regulated subject area before any authoring begins.",
+    "Source passed gate-003 (permits derivatives; no PII) with gate artifact committed.",
+    "Every item prominently framed as educational content with a visible 'educational, not advice' statement.",
+    "Coverage >= 90% of stated learning objectives; machine gate green.",
+    "Human sign-offs recorded: credentialed expert (factual accuracy + 'not advice' framing), SME, license, accessibility, bias.",
+    "Bank adopted by a beneficiary with adoption evidence artifact committed."
+  ],
+  "resources": [
+    "C:\\code\\elyos\\planning\\projects\\quiz-bank-open\\PLAN.md (Risk tier: high section)",
+    "C:\\code\\elyos\\CLAUDE.md (Refusal guardrails — high-stakes advice)",
+    "quiz-bank-open-validator-006 (CI harness)"
+  ],
+  "output": "A complete, credentialed-expert-reviewed question bank on a regulated subject, with 'educational, not advice' framing, all gates passed, and adoption evidence committed.",
+  "outputLicense": "CC-BY-4.0"
+}

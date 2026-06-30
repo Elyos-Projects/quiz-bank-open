@@ -1,0 +1,39 @@
+{
+  "project": "quiz-bank-open",
+  "lane": "donated",
+  "urgent": false,
+  "status": "open",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "id": "quiz-bank-open-moodle-011",
+  "title": "Moodle GIFT + Moodle XML exporters",
+  "type": "code",
+  "priority": "high",
+  "domain": [
+    "education",
+    "oer",
+    "assessment",
+    "tooling",
+    "open-source"
+  ],
+  "riskTier": "low",
+  "deliverable": "pr",
+  "tokenEstimate": "medium",
+  "context": "Moodle is the world's most widely deployed open LMS and the most likely import target for contributed banks. Two Moodle import formats are in scope: GIFT (a plain-text shorthand) and Moodle XML (the richer format supporting all question types). Both must preserve scoring semantics where Moodle supports them and explicitly flag any scoring rule that cannot be expressed (e.g. some partial-credit and matching/ordering types have limited GIFT support). A real Moodle import round-trip is required in M1 exit criteria.",
+  "objective": "Implement Moodle GIFT and Moodle XML exporters that convert a canonical bank to valid, importable Moodle formats, with a real Moodle import round-trip verified.",
+  "acceptanceCriteria": [
+    "GIFT exporter projects canonical banks to Moodle GIFT format (Moodle 4.x import-compatible) for all item types that GIFT supports; unsupported types are explicitly flagged and excluded from GIFT output, never silently mangled.",
+    "Moodle XML exporter projects canonical banks to Moodle question XML (Moodle 4.x) for all supported item types; scoring semantics preserved where Moodle supports them; any unexpressible rule explicitly flagged.",
+    "Ships a (type × format) support matrix documenting which item types are unsupported in each format and the graceful downgrade behavior.",
+    "At least one real Moodle import round-trip verified (GIFT and/or Moodle XML imported into a Moodle 4.x instance) confirming the exported files are importable and render correctly.",
+    "Code is MIT-licensed; pnpm build && pnpm test && pnpm lint pass; commits DCO signed-off."
+  ],
+  "resources": [
+    "quiz-bank-open-model-001 (canonical item model)",
+    "quiz-bank-open-grader-002 (scoring spec — semantics to preserve or flag)",
+    "Moodle GIFT format documentation (Moodle 4.x)",
+    "Moodle XML question import format documentation (Moodle 4.x)"
+  ],
+  "output": "CI-integrated Moodle GIFT and Moodle XML exporters (MIT-licensed Node packages) with golden fixtures, support matrix, and verified real Moodle import round-trip.",
+  "outputLicense": "MIT"
+}

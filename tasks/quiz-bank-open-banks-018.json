@@ -1,0 +1,40 @@
+{
+  "project": "quiz-bank-open",
+  "lane": "donated",
+  "urgent": false,
+  "status": "open",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "id": "quiz-bank-open-banks-018",
+  "title": "Question banks #4-#6 across >= 2 subjects",
+  "type": "writing",
+  "priority": "medium",
+  "domain": [
+    "education",
+    "oer",
+    "assessment",
+    "open-content",
+    "question-bank"
+  ],
+  "riskTier": "low",
+  "deliverable": "document",
+  "tokenEstimate": "large",
+  "context": "M2 requires at least 6 banks adopted cumulatively across at least 2 subjects to demonstrate the pipeline generalizes and that throughput is improving vs. the M1 baseline. Banks #4-#6 must span at least 2 distinct subject areas and use advanced item types where applicable. Any regulated-domain subject matter encountered must be escalated to high risk tier with expert sign-off and 'not advice' framing, or excluded. Authoring effort is logged per bank to measure median improvement vs. M1.",
+  "objective": "Author and deliver three additional question banks (banks #4-#6) spanning at least 2 subjects, each passing all gates and adopted by a beneficiary, with effort logged.",
+  "acceptanceCriteria": [
+    "Three banks authored and delivered, spanning at least 2 distinct subject areas (e.g. language arts, history, computer science, earth science — not 3 math banks).",
+    "Each source passed gate-003; coverage >= 90% of stated objectives; machine gate green; all human sign-offs recorded.",
+    "Each bank adopted with adoption evidence artifact committed.",
+    "Any regulated-domain subject matter (health, legal, safety, finance) escalated to high risk tier with expert sign-off and 'educational, not advice' framing — or excluded if no expert available.",
+    "Per-bank authoring + review effort logged; median effort compared to M0/M1 baseline."
+  ],
+  "resources": [
+    "quiz-bank-open-bank-014 (M1 pattern to follow)",
+    "quiz-bank-open-bank-015 (M1 pattern to follow)",
+    "quiz-bank-open-qti-010 (QTI 3.0 exporter)",
+    "quiz-bank-open-moodle-011 (Moodle exporter)",
+    "quiz-bank-open-partner-013 (confirmed partner for adoption)"
+  ],
+  "output": "Three complete, adopted question banks across >= 2 subjects in canonical JSON + QTI 3.0 + Moodle exports, with gate artifacts, sign-offs, adoption evidence, and effort logs committed.",
+  "outputLicense": "CC-BY-4.0"
+}

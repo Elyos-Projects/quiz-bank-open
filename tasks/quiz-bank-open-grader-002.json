@@ -1,0 +1,38 @@
+{
+  "project": "quiz-bank-open",
+  "lane": "donated",
+  "urgent": false,
+  "status": "open",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "id": "quiz-bank-open-grader-002",
+  "title": "Auto-grader scoring spec for core item types (incl. partial credit)",
+  "type": "design-spec",
+  "priority": "high",
+  "domain": [
+    "education",
+    "oer",
+    "assessment",
+    "open-content"
+  ],
+  "riskTier": "low",
+  "deliverable": "document",
+  "tokenEstimate": "medium",
+  "context": "Before any question bank can claim to be auto-gradable, a precise, versioned scoring specification must define exactly one deterministic scoring function per item type. Partial credit for multiple-select and matching/ordering items is an open decision that must be standardized before authoring begins, because QTI 3.0 and Moodle express partial credit differently. The spec must also define the self-test contract (key→100%, wrong→0, partial→defined value) that the CI harness will enforce. Without this spec the validator (quiz-bank-open-validator-006) and all exporters cannot be correctly implemented.",
+  "objective": "Specify the deterministic scoring function for each supported item type, standardize the partial-credit formula, define the self-test contract, and provide a mapping note for QTI 3.0 and Moodle where their native models differ.",
+  "acceptanceCriteria": [
+    "One deterministic scoring function is specified per item type: single-select (exact id match), multiple-select (standardized partial-credit formula, documented), true/false (exact), numeric (value within tolerance with optional unit normalization), short-text (Unicode-normalized/trimmed/case-folded match against acceptedAnswers), cloze (per-blank scoring), matching/ordering (per-pair or Kendall-style partial credit, documented).",
+    "Partial-credit formula for multiple-select and matching/ordering is standardized with a single chosen formula documented, including a mapping note for QTI 3.0 and Moodle flagging where their native models differ or cannot express the formula.",
+    "The scoring spec is versioned with a scoringSpecVersion field and recorded in specVersions.",
+    "Self-test contract is defined: published key scores 100%; at least one declared wrong answer per item scores 0; partial-credit items score the defined partial value for defined partial responses.",
+    "Document is CC-BY-4.0 licensed and committed to the project repo."
+  ],
+  "resources": [
+    "quiz-bank-open-model-001 (canonical item model — defines scoring field shapes)",
+    "1EdTech QTI 3.0 specification (response processing and outcomeDeclaration)",
+    "Moodle GIFT and Moodle XML import format docs (Moodle 4.x partial-credit rules)",
+    "C:\\code\\elyos\\planning\\projects\\quiz-bank-open\\PLAN.md"
+  ],
+  "output": "A versioned scoring specification document committed to the project repo, covering all supported item types with scoring functions, the standardized partial-credit formula, the self-test contract, and a QTI 3.0 / Moodle mapping note.",
+  "outputLicense": "CC-BY-4.0"
+}

@@ -1,0 +1,37 @@
+{
+  "project": "quiz-bank-open",
+  "lane": "donated",
+  "urgent": false,
+  "status": "open",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "id": "quiz-bank-open-reuse-020",
+  "title": "Track + verify external reuse events",
+  "type": "research",
+  "priority": "medium",
+  "domain": [
+    "education",
+    "oer",
+    "assessment",
+    "open-content",
+    "outcomes"
+  ],
+  "riskTier": "low",
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "context": "M3 requires at least 3 verifiable external reuse events (a bank imported into a third-party platform, merged into an OER repo, cited in a fork, or confirmed in classroom use by a named teacher) with externally verifiable evidence. Self-reported reuse does not count. This task monitors for reuse signals across GitHub forks, platform import records, and teacher communications, and records verified events in the outcome ledger.",
+  "objective": "Identify, verify, and record at least 3 externally verifiable reuse events for delivered banks in the project's outcome ledger.",
+  "acceptanceCriteria": [
+    "At least 3 verifiable external reuse events identified: each with externally verifiable evidence (platform import record/permalink, merged PR into an OER repo, teacher's written confirmation of classroom use, or fork/citation).",
+    "Each event recorded in the outcome ledger with: bank id, event type, evidence URL/permalink, date, and verifier.",
+    "Self-reported reuse without external evidence explicitly excluded.",
+    "Document committed to the project repo; CC-BY-4.0 licensed; commit DCO signed-off."
+  ],
+  "resources": [
+    "quiz-bank-open-bank-014, quiz-bank-open-bank-015, quiz-bank-open-banks-018 (delivered banks to monitor)",
+    "GitHub forks/citations monitoring",
+    "C:\\code\\elyos\\planning\\projects\\quiz-bank-open\\PLAN.md (Success metrics: Reuse signal)"
+  ],
+  "output": "A committed outcome-ledger supplement recording at least 3 externally verifiable reuse events with evidence.",
+  "outputLicense": "CC-BY-4.0"
+}

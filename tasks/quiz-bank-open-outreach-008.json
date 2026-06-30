@@ -1,0 +1,37 @@
+{
+  "project": "quiz-bank-open",
+  "lane": "donated",
+  "urgent": false,
+  "status": "open",
+  "requestor": "TO BE SECURED",
+  "verifiedNeed": false,
+  "id": "quiz-bank-open-outreach-008",
+  "title": "OER partner/platform outreach + pilot unit shortlist",
+  "type": "research",
+  "priority": "medium",
+  "domain": [
+    "education",
+    "oer",
+    "assessment",
+    "outreach",
+    "open-content"
+  ],
+  "riskTier": "low",
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "context": "No adoption partner is currently secured. All authoring tasks carry verifiedNeed:false until a named OER platform, school, or teacher agrees to review and use a bank. The Elyos bar is 'delivered, not merged' — a bank that is produced but never adopted is not a good deed delivered. This task opens the outreach threads that feed partner-013 (first confirmed adoption partner) and selects the OER unit for the pilot bank (pilot-009) based on a realistic adoption path, a clearly permissive license, and a non-regulated subject area.",
+  "objective": "Open outreach to candidate OER platforms and teachers, identify a shortlist of OER units with realistic adoption paths and permissive licenses, and select the pilot unit for quiz-bank-open-pilot-009.",
+  "acceptanceCriteria": [
+    "At least one outreach thread opened with a named candidate OER platform or teacher (e.g. OpenStax, LibreTexts, CK-12, Saylor, Kolibri/Learning Equality, Oppia, or an individual teacher network).",
+    "A shortlist of candidate OER units documented, each with: source URL, publisher, license, subject area, learning objectives, and assessment of the adoption path (informal channel vs. self-serve fallback).",
+    "Pilot unit selected from the shortlist: clearly permissive license (CC-BY, CC0, or public domain), non-regulated subject (e.g. middle-school math or intro science), and a realistic adoption path.",
+    "Document committed to the project repo; CC-BY-4.0 licensed; commit is DCO signed-off."
+  ],
+  "resources": [
+    "C:\\code\\elyos\\planning\\projects\\quiz-bank-open\\PLAN.md (Roadmap: M0 cold-start de-risking)",
+    "OpenStax, LibreTexts, CK-12, Saylor Academy, Kolibri/Learning Equality, Oppia (candidate OER publishers/platforms)",
+    "Creative Commons license checker"
+  ],
+  "output": "A committed outreach log and pilot-unit shortlist with the selected pilot unit, adoption path, and license record.",
+  "outputLicense": "CC-BY-4.0"
+}
